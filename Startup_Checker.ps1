@@ -9,5 +9,3 @@ if ($new_write_time -ne $old_write_time){
     "" | Out-File -FilePath $Log_file -Append
     $new_write_time | Out-File -FilePath $Log_file -Append -NoNewline # Add Newest Write Time to Log
 }
-
-
